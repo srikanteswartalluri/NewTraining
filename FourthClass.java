@@ -1,3 +1,3 @@
-public static void main(String[] args){
-    System.out.println("Third Class");
-}
+,mn.m.mkjpublic static void main(String[] args){
+kjlkj    System.out.println("Third Clajhljhljkss");
+ijnkjnlk}
