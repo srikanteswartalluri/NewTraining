@@ -1,0 +1,23 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebElement;
+
+import static java.lang.Thread.sleep;
+
+
+public class MyFirstClass {
+    public static void main(String[] args) throws InterruptedException  {
+        ChromeDriver wb = new ChromeDriver();
+        wb.get("https://www.youtube.com/");
+        System.out.println(wb.getTitle());
+        wb.findElement(By.xpath(".//*[@id='search']")).sendKeys("dj songs");
+        wb.findElement(By.cssSelector("#search-icon-legacy")).click();
+        sleep(5000);
+        String s = "Sai";
+        wb.navigate();
+        wb.close();
+
+    }
+}
